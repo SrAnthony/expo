@@ -80,7 +80,7 @@ NSString * const EXAppDidRegisterUserNotificationSettingsNotification = @"kEXApp
   return controller;
 }
 
-- (void)setUpApplication:(UIApplication *)application withLaunchOptions:(nullable NSDictionary *)launchOptions
+- (void)prepareWithLaunchOptions:(nullable NSDictionary *)launchOptions
 {
   [DDLog addLogger:[DDOSLogger sharedInstance]];
   RCTSetFatalHandler(handleFatalReactError);
